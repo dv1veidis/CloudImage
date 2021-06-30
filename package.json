@@ -1,0 +1,24 @@
+{
+  "name": "googleapi",
+  "version": "1.0.0",
+  "description": "Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "server": "nodemon main.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Deividas",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^0.22.1",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-fileupload": "^1.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^1.19.4"
+  }
+}
